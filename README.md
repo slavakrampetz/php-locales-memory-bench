@@ -2,6 +2,17 @@
 
 Main goal is find how much memory will be eaten on each Megabyte of text locales.
 
+For test there is generated locale files of two kinds: 
+- array-based, see `locale/array_X.php`
+- function-based, see `locale/func_X.php`
+Locales split by 5 files, each one is about 10 Mb of text content.
+
+How measure works
+1. Run two times, one for array-based, one for func-based
+2. Measure memory before run
+3. Measure memory after load each one file
+4. Show tabbed results
+
 ## For run
 
 ```sh
